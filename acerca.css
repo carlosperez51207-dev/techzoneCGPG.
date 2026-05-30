@@ -1,0 +1,42 @@
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+header {
+    padding: 30px;
+    background: #111827;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: rgb(47, 202, 230);
+    text-decoration: none;
+}
+
+.perfil {
+    margin-top: 50px;
+}
+
+.perfil img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38bdf8;
+}
+
+.perfil h2 {
+    margin-top: 20px;
+}
+
+.perfil p {
+    margin-top: 10px;
+    font-size: 18px;
+}

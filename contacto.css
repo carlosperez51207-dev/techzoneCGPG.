@@ -1,0 +1,44 @@
+body {
+    background: #020617;
+    font-family: Arial;
+    color: white;
+    14
+}
+
+header {
+    background: #111827;
+    padding: 30px;
+    text-align: center;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #38bdf8;
+    color: white;
+    cursor: pointer;
+}

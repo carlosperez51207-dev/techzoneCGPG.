@@ -1,0 +1,235 @@
+* {}
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,
+Helvetica,
+sans-serif;
+
+body {
+    background: #26c078;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #010707;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+4 .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(64, 7, 219, 0.6), rgba(21, 206, 129, 0.6)), url('tecladoazul.jpg');
+ background-size:cover;
+            background-position:center;
+    }
+
+    .hero-content h2 {
+        font-size:60px;
+        margin-bottom:20px;
+        animation:fadeDown 2s;
+    }
+
+    .hero-content p {
+        font-size:22px;
+        margin-bottom:25px;
+        animation:fadeUp 2s;
+    }
+
+    button {
+        padding:15px 30px;
+        border:none;
+        border-radius:10px;
+        background:#38bdf8;
+        color:white;
+        font-size:18px;
+        cursor:pointer;
+        transition:0.3s;
+    }
+
+    button:hover {
+        transform:scale(1.1);
+        background:#0ea5e9;
+    }
+
+    .promociones {
+        padding:80px 50px;
+        5 text-align:center;
+    }
+
+    .promociones h2 {
+        margin-bottom:40px;
+        font-size:40px;
+    }
+
+    .cards {
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    .card {
+        background:#1e293b;
+        width:300px;
+        border-radius:20px;
+        overflow:hidden;
+        transition:0.4s;
+        box-shadow:0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .card:hover {
+        transform:translateY(-10px);
+    }
+
+    .card img {
+        width:100%;
+        height:250px;
+        object-fit:cover;
+    }
+
+    .card h3 {
+        margin:20px 0 10px;
+    }
+
+    .card p {
+        margin-bottom:20px;
+    }
+
+    .empresa {
+        display:flex;
+        justify-content:center;
+        gap:40px;
+        padding:80px 40px;
+        flex-wrap:wrap;
+        6
+    }
+
+    .mision,
+    .vision {
+        background:#1e293b;
+        padding:40px;
+        border-radius:20px;
+        width:450px;
+    }
+
+    footer {
+        background:#111827;
+        padding:30px;
+        text-align:center;
+    }
+
+    .redes {
+        margin-top:20px;
+    }
+
+    .redes a {
+        color:white;
+        font-size:30px;
+        margin:0 15px;
+        transition:0.4s;
+    }
+
+    .redes a:hover {
+        color:#38bdf8;
+        transform:rotate(10deg) scale(1.2);
+    }
+
+    @keyframes fadeDown {
+        from {
+            opacity:0;
+            transform:translateY(-50px);
+        }
+
+        to {
+            opacity:1;
+            transform:translateY(0);
+        }
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity:0;
+            transform:translateY(50px);
+            7
+        }
+
+        to {}
+    }
+
+    opacity:1;
+    transform:translateY(0);
+
+    @media(max-width:768px) {
+        header {
+            padding:20px;
+        }
+
+        .menu-toggle {
+            display:block;
+        }
+
+        nav {}
+
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#111827;
+        display:none;
+
+        nav.active {
+            display:block;
+        }
+
+        nav ul {
+            flex-direction:column;
+            text-align:center;
+            padding:20px 0;
+        }
+
+        .hero-content h2 {
+            font-size:40px;
+        }
+
+        .hero-content p {
+            font-size:18px;
+        }
+    }
